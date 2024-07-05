@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ subject }}</title>
+  </head>
+  <body style="background-color: #F2F2F2; font-family: Arial, sans-serif; font-size: 16px;">
+    <table class="body-wrap" style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; background-color: transparent; margin: 0;">
+      <tr style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+        <td style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;" valign="top"></td>
+        <td class="container" width="600" style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto;" valign="top">
+          <div class="content" style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
+            <table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction" style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; margin: 0; border: none;">
+              <tr style="font-family: 'Roboto', sans-serif; font-size: 14px; margin: 0;">
+                <td class="content-wrap" style="font-family: 'Roboto', sans-serif; box-sizing: border-box; color: #495057; font-size: 14px; vertical-align: top; margin: 0;box-shadow: 0 3px 15px rgba(30,32,37,.06); ;border-radius: 7px; background-color: #fff;overflow: hidden;" valign="top">
+                  <meta itemprop="name" content="Confirm Email" style="font-family: 'Roboto', sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;" />
+                  <div style="padding: 20px;box-sizing: border-box; text-align: center; background-image: linear-gradient(to right, green, rgb(199, 15, 9));">
+                    <h6 style="font-family: 'Roboto', sans-serif;margin: 0; font-size: 15px;color: yellow;text-transform: uppercase;">{{ subject }}</h6>
+                  </div>
+                  <div style="padding: 20px;box-sizing: border-box; text-align: center;">
+                    <h5 style="font-family: 'Roboto', sans-serif;margin-bottom: 10px;font-weight: 500;">Bien heureux à vous {{ user.name }},</h5>
+                    <p style="font-size: 14px;color: #98a6ad;border-bottom: 1px solid #e9ebec;padding-bottom: 18px;">Voici vos identifiants pour vous connecter à votre plateforme:</p>
+
+                    <table style="width:100%;">
+                      <tbody>
+                        <tr style="text-align: left;">
+                          <th style="padding: 5px;">
+                            <p style="color: #878a99; font-size: 13px; margin-bottom: 2px; font-weight: 400;">Email</p>
+                            <span>{{ email }}</span>
+                          </th>
+                        </tr>
+                        <tr style="text-align: left;">
+                          <th style="padding: 5px;">
+                            <p style="color: #878a99; font-size: 13px; margin-bottom: 2px; font-weight: 400;">Mot de passe</p>
+                            <span>{{ password }}</span>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div style="padding: 20px;box-sizing: border-box; text-align: center; background-color:  rgba(19, 189, 70, 0.377);">
+                    <h6 style="font-family: 'Roboto', sans-serif;margin: 0; font-size: 15px;text-transform: uppercase;color: rgb(7, 87, 34); font-weight: 600;">CARS-Service</h6>
+                  </div>
+                  <div style="padding: 20px;box-sizing: border-box; text-align: center;">
+                    <p style="font-family: 'Roboto', sans-serif;margin-bottom: 0px;font-weight: 500;color: #98a6ad;">Merci pour votre confiance !</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
